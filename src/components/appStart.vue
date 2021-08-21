@@ -34,7 +34,7 @@
 <script>
 import { Group, Cell } from 'vux'
 import { Button } from 'iview'
-import startPage001 from '@/common/images/startPage/startPage001.png'
+import startPage001 from './images/startPage/startPage001.png'
 export default {
   name: 'appStart',
   data () {

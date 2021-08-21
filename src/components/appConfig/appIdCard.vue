@@ -38,8 +38,8 @@ let Base64 = require('js-base64').Base64
 import { Button, Input, Form, FormItem, Icon, Modal, Message } from 'iview'
 import { Popup } from 'vux'
 import appHeader from '@/components/appConfig/appHeader.vue'
-import idPhotoA from './images/idcard01_03.png'
-import idPhotoB from './images/idcard01_06.png'
+import idPhotoA from '../images/idcard01_03.png'
+import idPhotoB from '../images/idcard01_06.png'
 export default {
   name: 'appIdCard',
   data () {

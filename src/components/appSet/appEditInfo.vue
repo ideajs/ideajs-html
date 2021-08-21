@@ -112,8 +112,8 @@
 import { Button, Icon, Modal, Input, Form, FormItem, Message } from 'iview'
 import { Popup, Datetime, PopupPicker } from 'vux'
 import appHeader from '@/components/appConfig/appHeader.vue'
-import loopImg01 from '@/common/images/banner/study01.png'
-import loopImg03 from '@/common/images/banner/english01.png'
+import loopImg01 from '../images/banner/study01.png'
+import loopImg03 from '../images/banner/english01.png'
 export default {
   name: 'appEditInfo',
   data () {

@@ -38,8 +38,8 @@ import { Button, Icon, Row, Col } from 'iview'
 import { Popup } from 'vux'
 import { _getNews } from '@/common/js/appMain/function'
 import appHeader from '@/components/appConfig/appHeader.vue'
-import qrcode from '@/common/images/small-icon/qrcode.jpg'
-import largeImg from '@/common/images/banner/study01.png'
+import qrcode from '../images/small-icon/qrcode.jpg'
+import largeImg from '../images/banner/study01.png'
 export default {
   name: 'appArticle',
   data () {

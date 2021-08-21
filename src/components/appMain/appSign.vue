@@ -24,7 +24,7 @@ import { Button, Modal, Icon, Input, Message } from 'iview'
 import { Popup } from 'vux'
 import { _getCourse } from '@/common/js/appMain/function'
 import appHeader from'@/components/appConfig/appHeader.vue'
-import bkImg from './images/bk123_01.png'
+import bkImg from '../images/bk123_01.png'
 export default {
   name: 'appSign',
   data () {

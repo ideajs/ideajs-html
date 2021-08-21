@@ -134,7 +134,7 @@ import { Button, Row, Col, Modal, Icon, CellGroup, Cell } from 'iview'
 import { Popup } from 'vux'
 import { _getCourse } from '@/common/js/appMain/function'
 import appHeader from '@/components/appConfig/appHeader.vue'
-import headImg from './images/headImg.png'
+import headImg from '../images/headImg.png'
 export default {
   name: 'appMember',
   data () {

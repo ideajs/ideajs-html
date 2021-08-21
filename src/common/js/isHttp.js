@@ -27,11 +27,11 @@ this.$http.post('/someUrl',[body],[options]).then(successCallback, errorCallback
  */
 // 封装vue-resource 的post请求
 export function HTTP_POST (url, param, success, fail, headers) {
-  url = url || CONFIG.URL.XML
+  url = url || CONFIG('XML')
   let _headers = {
     'Content-Type': 'application/json;charset=UTF-8',
-    'appid': CONFIG.PARAMS.appid,
-    'apptoken': CONFIG.PARAMS.apptoken
+    'appid': CONFIG('appid'),
+    'apptoken': CONFIG('apptoken')
   }
   _headers = headers ? Object.assign(_headers, headers) : _headers
   let options = { // http请求参数设置
@@ -57,11 +57,11 @@ export function HTTP_POST (url, param, success, fail, headers) {
 
 // 封装vue-resource 的get请求
 export function HTTP_GET (url, success, fail, headers) {
-  url = url || CONFIG.URL.XML
+  url = url || CONFIG('XML')
   let _headers = {
     'Content-Type': 'application/json;charset=UTF-8',
-    'appid': CONFIG.PARAMS.appid,
-    'apptoken': CONFIG.PARAMS.apptoken
+    'appid': CONFIG('appid'),
+    'apptoken': CONFIG('apptoken')
   }
   _headers = headers ? Object.assign(_headers, headers) : _headers
   let options = { // http请求参数设置

@@ -58,9 +58,9 @@ import { Row, Col, Button, Drawer, Carousel, CarouselItem, Tabs, TabPane, Icon }
 import { Popup } from 'vux'
 import { _getCourse } from '@/common/js/appEnglish/function'
 import appHeader from '@/components/appConfig/appHeader.vue'
-import loopImg01 from '@/common/images/banner/study01.png'
-import loopImg03 from '@/common/images/banner/english01.png'
-import courseImg01 from './images/course_01.png'
+import loopImg01 from '../images/banner/study01.png'
+import loopImg03 from '../images/banner/english01.png'
+import courseImg01 from '../images/course_01.png'
 export default {
   name: 'appEnDetail',
   data () {

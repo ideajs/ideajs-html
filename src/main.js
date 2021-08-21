@@ -13,10 +13,11 @@ import {sync} from 'vuex-router-sync'
 import VueTouch from 'vue-touch'
 import { TransferDom } from 'vux'
 import VConsole from 'vconsole'
-var config = require('../config')
-if (!process.env.NODE_ENV) {
-  process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
-}
+// var config = require('../config')
+// if (!process.env.NODE_ENV) {
+//   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
+// }
+console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV !== 'production') {
   const vConsole = new VConsole()
   Vue.use(vConsole)

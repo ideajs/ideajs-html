@@ -31,7 +31,7 @@ import { Button, Input, Form, FormItem, Icon, Modal, Message } from 'iview'
 import { Popup } from 'vux'
 import appHeader from'@/components/appConfig/appHeader.vue'
 import appCaptcha from'@/components/appConfig/appCaptcha.vue'
-import headerFace001 from '@/common/images/small-icon/headerFace001.png'
+import headerFace001 from '../images/small-icon/headerFace001.png'
 export default {
   name: 'appLogin',
   data () {

@@ -29,7 +29,7 @@
 import { Button, Icon } from 'iview'
 import { Popup } from 'vux'
 import appHeader from'@/components/appConfig/appHeader.vue'
-import qrcode from '@/common/images/small-icon/qrcode.jpg'
+import qrcode from '../images/small-icon/qrcode.jpg'
 export default {
   name: 'appWxcode',
   data () {

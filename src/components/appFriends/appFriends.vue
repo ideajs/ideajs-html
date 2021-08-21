@@ -95,9 +95,9 @@
 import { Row, Col, Button, Tabs, TabPane, Icon, Modal, Input, Form, FormItem } from 'iview'
 import { Popup } from 'vux'
 import appHeader from '@/components/appConfig/appHeader.vue'
-import loopImg01 from '@/common/images/banner/study01.png'
-import loopImg03 from '@/common/images/banner/english01.png'
-import headImg from './images/headImg.png'
+import loopImg01 from '../images/banner/study01.png'
+import loopImg03 from '../images/banner/english01.png'
+import headImg from '../images/headImg.png'
 export default {
   name: 'appFriends',
   data () {

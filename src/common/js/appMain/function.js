@@ -1,6 +1,7 @@
 // Created by macmzon@163.com
 // 公共方法库
 
+import {_getData} from '../service.js'
 // let Base64 = require('js-base64').Base64
 // this.$post('url', {}, res => { console.log(res) }, err => { console.log(err) })
 
@@ -18,13 +19,9 @@ export function _getNews (param, func) {
 }
 // 获取菜单按钮
 export function _getMenu (func) {
-  let data = require('@/common/data/english/course.js')
-  data = data.course
-  func && func(data)
+  _getData('course.js', func)
 }
 // 获取首页课程
 export function _getCourse (func) {
-  let data = require('@/common/data/english/course.js')
-  data = data.course
-  func && func(data)
+  _getData('course.js', func)
 }

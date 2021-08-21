@@ -36,7 +36,7 @@
               <div v-for="item in data.unlearn" :key="item.id" class="course-list">
                 <Row>
                   <Col span="6">
-                    <div class="newMsg-flag unlearn">未学
+                    <div class="newMsg-flag unlearn">推荐
                     </div>
                     <div class="newMsg-img">
                       <img :src="item.img || data.courseImg" />
@@ -49,45 +49,14 @@
                     </div>
                   </Col>
                   <Col span="6" style="text-align:right;">
-                    <div class="newMsg-money">{{item.money}}
+                    <div class="newMsg-money"><!-- {{item.money}} -->
                     </div>
-                    <div @click="menuGo(item)" class="newMsg-button unlearn">报名课程
+                    <div @click="menuGo(item)" class="newMsg-button unlearn">学习课程
                     </div>
                   </Col>
                 </Row>
               </div>
               <div class="x-unData" v-if="data.unlearn.length === 0">
-                <Icon type="md-walk" />
-                <div>暂无数据</div>
-              </div>
-            </div>
-          </TabPane>
-          <TabPane name="learn" label="在学课程" icon="ios-bookmarks">
-            <div class="learn">
-              <div v-for="item in data.learn" :key="item.id" class="course-list learn-list">
-                <Row>
-                  <Col span="6">
-                    <div class="newMsg-flag learning">在学
-                    </div>
-                    <div class="newMsg-img">
-                      <img :src="item.img || data.courseImg" />
-                    </div>
-                  </Col>
-                  <Col span="12">
-                    <div class="newMsg-title">{{item.title}}
-                    </div>
-                    <div class="newMsg-brief">{{item.brief}}
-                    </div>
-                  </Col>
-                  <Col span="6" style="text-align:right;">
-                    <div class="newMsg-money">{{item.money}}
-                    </div>
-                    <div @click="menuGo(item)" class="newMsg-button learning">学习课程
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-              <div class="x-unData" v-if="data.learn.length === 0">
                 <Icon type="md-walk" />
                 <div>暂无数据</div>
               </div>
@@ -104,9 +73,9 @@ import { Row, Col, Button, Drawer, Carousel, CarouselItem, Tabs, TabPane, Icon }
 import { Popup } from 'vux'
 import { _getMenu, _getCourse } from '@/common/js/appMain/function'
 import appHeader from '@/components/appConfig/appHeader.vue'
-import loopImg01 from '@/common/images/banner/study01.png'
-import loopImg03 from '@/common/images/banner/english01.png'
-import courseImg01 from './images/course_01.png'
+import loopImg01 from '../images/banner/study01.png'
+import loopImg03 from '../images/banner/english01.png'
+import courseImg01 from '../images/course_01.png'
 export default {
   name: 'appIndex',
   data () {
@@ -184,7 +153,7 @@ export default {
       })
     },
     menuGo (data) {
-      if (this.getCourseFlag(data.id) === 'learning') {
+      // if (this.getCourseFlag(data.id) === 'learning') {
         // 学习课程
         this.$push({
           path: '/appEnDetail',
@@ -194,7 +163,7 @@ export default {
             page: data.page
           }
         }, this)
-      } else {
+      /* } else {
         if (!this.data.userLogin) {
           this.userLogin('/appSign?id=' + data.id + '&money=' + data.money)
           return
@@ -207,7 +176,7 @@ export default {
             money: data.money
           }
         }, this)
-      }
+      } */
     },
     userLogin (url) {
       this.$push({

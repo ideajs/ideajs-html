@@ -18,8 +18,8 @@ import VueQr from 'vue-qr'
 import {Button} from 'iview'
 import { Popup } from 'vux'
 import appHeader from'@/components/appConfig/appHeader.vue'
-import logoSrc from'@/common/images/small-icon/appBarCode001.png'
-import bgSrc from'@/common/images/small-icon/appBarCode014.jpg'
+import logoSrc from'../images/small-icon/appBarCode001.png'
+import bgSrc from'../images/small-icon/appBarCode014.jpg'
 
 export default {
   name: 'appBarCode',
